@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Ejecutando pruebas...'
-                sh 'docker run my-app:latest python -m pytest'  # Si tienes pruebas
+                sh 'docker run my-app:latest python -m pytest'  
             }
         }
         stage('Deploy') {
