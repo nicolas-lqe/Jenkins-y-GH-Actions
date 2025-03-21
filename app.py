@@ -1,5 +1,5 @@
 #App de ejemplo para desplegar en Jenkins. Se usa Flask por lo sencillo y minimalista."
-from flask import Flask
+from flask import Flask # type: ignore
 app = Flask(__name__)
 
 @app.route('/')
